@@ -5,7 +5,7 @@ const jwt     = require('jsonwebtoken');
 const { stmts } = require('./database');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 const JWT_SECRET = 'blood_donation_2026_secret';
 const ADMIN_KEY = 'Admin@2026';
 
