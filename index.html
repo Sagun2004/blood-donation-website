@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blood Donation - Dehradun 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a class="nav-logo" href="#">🩸<span>Blood</span>Donation</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#why" onclick="closeNav()">Why Donate</a></li>
+    <li><a href="#partners" onclick="closeNav()">Partners</a></li>
+    <li><a href="#venues" onclick="closeNav()">Venues</a></li>
+    <li><a href="#schedule" onclick="closeNav()">Schedule</a></li>
+    <li><a href="#eligibility" onclick="closeNav()">Eligibility</a></li>
+    <li><a href="#blood-compat" onclick="closeNav()">Blood Guide</a></li>
+    <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="nav-btn" onclick="openModal('user')">Login/signup</button>
+    <a class="nav-cta" href="#register">Register to Donate</a>
+    <button class="nav-btn nav-btn-gold" onclick="openModal('admin')">⚙ Admin</button>
+    <button class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-circles"><span></span><span></span><span></span></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Dehradun City-Wide Initiative · 2026</p>
+    <h1>Give Blood,<br/><em>Give Life.</em></h1>
+    <p class="hero-sub">Uniting colleges, hospitals, and blood banks across Dehradun in the city's largest blood donation camp — because every drop counts.</p>
+    <div class="cta-group">
+      <a class="btn btn-primary" href="#register">Donate Now</a>
+      <a class="btn btn-outline" href="#partners">View Partners</a>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stats-grid">
+    <div class="stat-item"><div class="stat-num" data-target="12">0</div><div class="stat-label">Colleges Participating</div></div>
+    <div class="stat-item"><div class="stat-num" data-target="8">0</div><div class="stat-label">Hospitals On-Board</div></div>
+    <div class="stat-item"><div class="stat-num" data-target="6">0</div><div class="stat-label">Blood Banks</div></div>
+    <div class="stat-item"><div class="stat-num" data-target="1000">0</div><div class="stat-label">Target Donations</div></div>
+  </div>
+</div>
+
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <p class="section-label">Simple Process</p>
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-desc" style="margin:0 auto 0;">Three easy steps to become a lifesaver.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card reveal"><div class="how-num">01</div><div class="how-icon">📝</div><h3>Register Online</h3><p>Create your account, fill the donor form, choose your preferred venue and day.</p></div>
+      <div class="how-arrow reveal">→</div>
+      <div class="how-card reveal"><div class="how-num">02</div><div class="how-icon">🩺</div><h3>Health Check</h3><p>Our on-site medical team does a quick pre-screening — haemoglobin, BP, and pulse check.</p></div>
+      <div class="how-arrow reveal">→</div>
+      <div class="how-card reveal"><div class="how-num">03</div><div class="how-icon">🩸</div><h3>Donate & Save Lives</h3><p>Donation takes just 8–10 minutes. You'll receive a certificate and refreshments.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY DONATE -->
+<section id="why">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">Why It Matters</p>
+      <h2 class="section-title">Every 2 Seconds, Someone<br/>Needs Blood</h2>
+      <p class="section-desc">Donating blood is the simplest act of humanity. One donation can save up to three lives — and it costs you nothing but 30 minutes.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="why-icon">💉</div><h3>Safe & Quick</h3><p>The entire donation process takes under 30 minutes. Medically supervised, painless, and completely safe for healthy adults.</p></div>
+      <div class="why-card reveal"><div class="why-icon">🫀</div><h3>Saves 3 Lives</h3><p>A single unit of blood is separated into red cells, plasma, and platelets — each component helps a different patient.</p></div>
+      <div class="why-card reveal"><div class="why-icon">🩹</div><h3>No Substitute</h3><p>Blood cannot be manufactured. Accident victims, surgery patients, and cancer patients rely entirely on volunteer donors.</p></div>
+      <div class="why-card reveal"><div class="why-icon">🔄</div><h3>Replenishes in 56 Days</h3><p>Your body regenerates the donated blood within 56 days. You can donate up to 6 times a year.</p></div>
+      <div class="why-card reveal"><div class="why-icon">🏥</div><h3>Local Impact</h3><p>Blood donated in Dehradun stays in Dehradun — supporting local hospitals, trauma centers, and maternity wards.</p></div>
+      <div class="why-card reveal"><div class="why-icon">🎓</div><h3>Student Leadership</h3><p>Students from Dehradun colleges lead drives, earn volunteer certificates, and inspire a culture of community care.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOOD COMPATIBILITY -->
+<section class="blood-compat-section" id="blood-compat">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <p class="section-label">Know Your Blood</p>
+      <h2 class="section-title">Blood Group Compatibility</h2>
+      <p class="section-desc" style="margin:0 auto;">Click on your blood group to see who you can donate to and receive from.</p>
+    </div>
+    <div class="compat-wrap reveal">
+      <div class="compat-btns">
+        <button class="compat-btn" onclick="showCompat('A+')">A+</button>
+        <button class="compat-btn" onclick="showCompat('A-')">A-</button>
+        <button class="compat-btn" onclick="showCompat('B+')">B+</button>
+        <button class="compat-btn" onclick="showCompat('B-')">B-</button>
+        <button class="compat-btn" onclick="showCompat('AB+')">AB+</button>
+        <button class="compat-btn" onclick="showCompat('AB-')">AB-</button>
+        <button class="compat-btn" onclick="showCompat('O+')">O+</button>
+        <button class="compat-btn" onclick="showCompat('O-')">O-</button>
+      </div>
+      <div class="compat-result" id="compatResult">
+        <p style="color:rgba(255,255,255,0.35);text-align:center;padding:2.5rem 0;">☝️ Select a blood group above to see compatibility</p>
+      </div>
+    </div>
+    <div class="compat-facts reveal">
+      <div class="fact-card"><div class="fact-icon">👑</div><h4>Universal Donor</h4><p>O- can donate to ALL blood groups. Most needed in emergencies.</p></div>
+      <div class="fact-card"><div class="fact-icon">🌍</div><h4>Universal Receiver</h4><p>AB+ can receive from ALL blood groups. Rarest but most flexible.</p></div>
+      <div class="fact-card"><div class="fact-icon">📊</div><h4>Most Common</h4><p>O+ is the most common blood group in India (~36% population).</p></div>
+      <div class="fact-card"><div class="fact-icon">⚡</div><h4>Most Needed</h4><p>O- and B- are always in critical shortage at blood banks.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="entities" id="partners">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">Our Network</p>
+      <h2 class="section-title">Colleges, Hospitals &<br/>Blood Banks</h2>
+      <p class="section-desc">A powerful tri-sector alliance making Dehradun's donation drive one of Uttarakhand's biggest health events.</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('colleges',this)">🎓 Colleges (12)</button>
+      <button class="tab-btn" onclick="switchTab('hospitals',this)">🏥 Hospitals (8)</button>
+      <button class="tab-btn" onclick="switchTab('banks',this)">🩸 Blood Banks (6)</button>
+    </div>
+    <div class="tab-panel active" id="tab-colleges">
+      <div class="entity-card reveal"><div class="entity-icon">🎓</div><h3>Institute of Technology and Management</h3><p>Chakrata Road, Dehradun</p><span class="entity-tag tag-college">Host Venue</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🎓</div><h3>UPES - University of Petroleum</h3><p>Bidholi Campus, Via Prem Nagar</p><span class="entity-tag tag-college">Participating</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🎓</div><h3>DAV (PG) College</h3><p>Rajpur Road, Dehradun</p><span class="entity-tag tag-college">Participating</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🎓</div><h3>DIT University</h3><p>Makkawala, Mussoorie Diversion</p><span class="entity-tag tag-college">Participating</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🎓</div><h3>Doon Business School</h3><p>Selaqui, Dehradun</p><span class="entity-tag tag-college">Participating</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🎓</div><h3>Uttaranchal University</h3><p>Arcadia Grant, Premnagar</p><span class="entity-tag tag-college">Participating</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🎓</div><h3>IMS Unison University</h3><p>Makkawala Greens, Mussoorie Road</p><span class="entity-tag tag-college">Participating</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🎓</div><h3>HNB Garhwal Univ. Centre</h3><p>Badripur, Dehradun</p><span class="entity-tag tag-college">Participating</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🎓</div><h3>Dolphin (PG) Inst. of BMS</h3><p>Chakrata Road, Dehradun</p><span class="entity-tag tag-college">Participating</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🎓</div><h3>Dev Bhoomi Group</h3><p>Manduwala, Dehradun</p><span class="entity-tag tag-college">Participating</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🎓</div><h3>Shri Guru Ram Rai Univ.</h3><p>Patel Nagar, Dehradun</p><span class="entity-tag tag-college">Participating</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🎓</div><h3>Doon Valley College</h3><p>Kargi Grant, Dehradun</p><span class="entity-tag tag-college">Participating</span></div>
+    </div>
+    <div class="tab-panel" id="tab-hospitals">
+      <div class="entity-card reveal"><div class="entity-icon">🏥</div><h3>Doon Hospital (Govt.)</h3><p>Shyampur, Rishikesh Road</p><span class="entity-tag tag-hospital">Collection Point</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🏥</div><h3>Max Super-Speciality Hospital</h3><p>Mussoorie Diversion Road</p><span class="entity-tag tag-hospital">Partner</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🏥</div><h3>Synergy Hospital</h3><p>GMS Road, Dehradun</p><span class="entity-tag tag-hospital">Partner</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🏥</div><h3>Sanjay Orthopaedic Hospital</h3><p>Rajpur Road</p><span class="entity-tag tag-hospital">Partner</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🏥</div><h3>Shri Mahant Indiresh Hospital</h3><p>Patel Nagar</p><span class="entity-tag tag-hospital">Collection Point</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🏥</div><h3>Himalayan Hospital, SRHU</h3><p>Jolly Grant, Dehradun</p><span class="entity-tag tag-hospital">Partner</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🏥</div><h3>Ivy Hospital</h3><p>Saharanpur Road, Dehradun</p><span class="entity-tag tag-hospital">Partner</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🏥</div><h3>Kailash Hospital</h3><p>Haridwar Bypass, Dehradun</p><span class="entity-tag tag-hospital">Partner</span></div>
+    </div>
+    <div class="tab-panel" id="tab-banks">
+      <div class="entity-card reveal"><div class="entity-icon">🩸</div><h3>Doon Medical College Blood Bank</h3><p>New Colony, Dehradun</p><span class="entity-tag tag-bank">Central Hub</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🩸</div><h3>Indian Red Cross - Dehradun</h3><p>Gandhi Road</p><span class="entity-tag tag-bank">Collection Hub</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🩸</div><h3>AIIMS Rishikesh Blood Bank</h3><p>Rishikesh (Transfer Hub)</p><span class="entity-tag tag-bank">Transfer Hub</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🩸</div><h3>Rotary Blood Bank Dehradun</h3><p>Rajpur Road</p><span class="entity-tag tag-bank">Partner</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🩸</div><h3>Lifeline Blood Bank</h3><p>Kanwali Road</p><span class="entity-tag tag-bank">Partner</span></div>
+      <div class="entity-card reveal"><div class="entity-icon">🩸</div><h3>Vivekananda Blood Bank</h3><p>Clement Town</p><span class="entity-tag tag-bank">Partner</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- VENUES -->
+<section class="venues" id="venues">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">Camp Venues</p>
+      <h2 class="section-title">Where to Donate</h2>
+      <p class="section-desc">Four active donation points across Dehradun — find one near you and walk in any day of the camp.</p>
+    </div>
+    <div class="venue-list">
+      <div class="venue-card reveal"><div class="venue-map-thumb">📍</div><div class="venue-info"><h3>Institute of Technology and Management</h3><p>Chakrata Road, Dehradun — Main Venue</p><div class="venue-time">🕗 8:00 AM – 6:00 PM</div></div></div>
+      <div class="venue-card reveal"><div class="venue-map-thumb">📍</div><div class="venue-info"><h3>Doon Hospital Campus</h3><p>Shyampur, Rishikesh Road — 24-hr accessible facility</p><div class="venue-time">🕗 9:00 AM – 5:00 PM</div></div></div>
+      <div class="venue-card reveal"><div class="venue-map-thumb">📍</div><div class="venue-info"><h3>Indian Red Cross Society</h3><p>Gandhi Road, Dehradun — Central city collection</p><div class="venue-time">🕗 10:00 AM – 6:00 PM</div></div></div>
+      <div class="venue-card reveal"><div class="venue-map-thumb">📍</div><div class="venue-info"><h3>Shri Mahant Indiresh Hospital</h3><p>Patel Nagar — West Dehradun coverage</p><div class="venue-time">🕗 9:00 AM – 5:00 PM</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="schedule" id="schedule">
+  <div class="container schedule-grid">
+    <div class="reveal">
+      <p class="section-label">3-Day Programme</p>
+      <h2 class="section-title">Camp Schedule</h2>
+      <p class="section-desc">A structured three-day event with medical check-ups, awareness sessions, and live donation drives.</p>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">DAY 1 · 15 june · 8:00 AM</div><div class="tl-title">Inauguration & Awareness Walk</div><div class="tl-desc">Official launch by district Communities, Dehradun.</div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">DAY 1 · 10:00 AM - 6:00 PM</div><div class="tl-title">Donation Drive – Phase I</div><div class="tl-desc">Active collection at ITM Dehradun and Red Cross. Medical teams conduct pre-screening on-site.</div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">DAY 2 · 16 june · 9:00 AM</div><div class="tl-title">Blood Group Awareness Camp</div><div class="tl-desc">Free blood grouping for all participants. Health talk by doctors from Doon Hospital.</div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">DAY 2 · 11:00 AM - 5:00 PM</div><div class="tl-title">Donation Drive – Phase II</div><div class="tl-desc">Drives at Doon Hospital, Indian Red Cross Society and Shri Mahant Indiresh Hospital.</div></div>
+      <div class="tl-item"><div class="tl-dot"></div><div class="tl-time">DAY 3 · 17 june · 9:00 AM</div><div class="tl-title">Final Drive & Certification</div><div class="tl-desc">Last day of donations + certificate distribution to student volunteers.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ELIGIBILITY -->
+<section id="eligibility">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label">Before You Donate</p>
+      <h2 class="section-title">Eligibility Criteria</h2>
+      <p class="section-desc">Make sure you meet these criteria to donate safely. When in doubt, our on-site medical team will guide you.</p>
+    </div>
+    <div class="eligibility-grid">
+      <div class="elig-box reveal">
+        <h3>✅ You CAN Donate If…</h3>
+        <ul class="elig-list">
+          <li>You are 18-65 years old</li><li>Your weight is 45 kg or more</li>
+          <li>You are in good general health</li><li>Haemoglobin ≥ 12.5 g/dL</li>
+          <li>Your pulse is 60-100 bpm</li><li>BP is 100/60 - 160/100 mmHg</li>
+          <li>It has been 56+ days since last donation</li><li>You have had a meal 4+ hours ago</li>
+        </ul>
+      </div>
+      <div class="elig-box reveal">
+        <h3>❌ You CANNOT Donate If…</h3>
+        <ul class="elig-list no">
+          <li>You have fever or flu-like symptoms</li><li>You are pregnant or recently delivered</li>
+          <li>You are on antibiotics or steroids</li><li>You have HIV, Hepatitis B/C, or malaria</li>
+          <li>You donated blood in the last 56 days</li><li>You had surgery or tattoo in last 6 months</li>
+          <li>You consumed alcohol in the last 24 hours</li><li>You have a history of heart disease</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <p class="section-label">Got Questions?</p>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Does donating blood hurt? <span class="faq-arrow">▼</span></button><div class="faq-a">You may feel a small pinch when the needle goes in — that's it. The donation itself is completely painless and takes only 8–10 minutes.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What should I eat before donating? <span class="faq-arrow">▼</span></button><div class="faq-a">Have a proper meal at least 4 hours before. Avoid fatty foods. Drink plenty of water — being well-hydrated makes donation easier and faster.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How often can I donate blood? <span class="faq-arrow">▼</span></button><div class="faq-a">You can donate whole blood once every 56 days (about 8 weeks), which means up to 6 times a year. Your body replenishes the donated blood in that time.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Will I feel weak after donating? <span class="faq-arrow">▼</span></button><div class="faq-a">Most donors feel completely fine. We recommend resting for 10–15 minutes after donation, having a snack and juice, and avoiding heavy exercise for the rest of the day.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is there any age limit? <span class="faq-arrow">▼</span></button><div class="faq-a">Yes — donors must be between 18 and 65 years of age. Donors under 18 are not permitted regardless of parental consent.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do I need to bring any documents? <span class="faq-arrow">▼</span></button><div class="faq-a">Carry a valid photo ID (Aadhaar, College ID, or PAN card). Your online registration confirmation is helpful but walk-ins are also welcome.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Will I get a certificate? <span class="faq-arrow">▼</span></button><div class="faq-a">Yes! Every donor receives a blood donation certificate. Student volunteers also receive a separate volunteer certificate from the college.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I donate if I have a cold? <span class="faq-arrow">▼</span></button><div class="faq-a">No. If you have any cold, cough, fever, or feel unwell on the day of donation, please skip and come back when you're fully recovered.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTER -->
+<section class="register" id="register">
+  <div class="container" style="max-width:720px;">
+    <div class="reveal">
+      <p class="section-label" style="color:var(--gold);">Ready to Save Lives?</p>
+      <h2 class="section-title">Register as a Donor</h2>
+      <p class="section-desc">Fill in your details and we'll confirm your slot at the nearest venue.</p>
+    </div>
+    <div class="form-grid reveal">
+      <div class="form-group"><label>First Name</label><input type="text" id="fname" placeholder="First Name"/></div>
+      <div class="form-group"><label>Last Name</label><input type="text" id="lname" placeholder="Last Name"/></div>
+      <div class="form-group"><label>Age</label><input type="number" id="age" placeholder="--" min="18" max="65"/></div>
+      <div class="form-group"><label>Blood Group</label><select id="blood"><option value="">Select…</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select></div>
+      <div class="form-group"><label>Phone</label><input type="tel" id="phone" placeholder="+91 98xxxxxxxx"/></div>
+      <div class="form-group"><label>Email</label><input type="email" id="email" placeholder="xyz@example.com"/></div>
+      <div class="form-group"><label>Organization / College</label><select id="org"><option value="">Select…</option><option>Institute of Technology and Management</option><option>UPES Bidholi</option><option>DAV (PG) College</option><option>DIT University</option><option>Uttaranchal University</option><option>Doon Business School</option><option>IMS Unison University</option><option>Other / Independent</option></select></div>
+      <div class="form-group"><label>Preferred Venue</label><select id="venue"><option value="">Select…</option><option>ITM Dehradun</option><option>Doon Hospital</option><option>Indian Red Cross</option><option>Shri Mahant Indiresh Hospital</option></select></div>
+      <div class="form-group"><label>Preferred Day</label><select id="day"><option>Day 1 - 15 june</option><option>Day 2 - 16 june</option><option>Day 3 - 17 june</option></select></div>
+      <div class="form-group"><label>Have You Donated Before?</label><select id="donated"><option>No - First Time</option><option>Yes - Once or Twice</option><option>Yes - Multiple Times</option></select></div>
+    </div>
+    <div class="form-submit reveal">
+      <button class="btn btn-primary" onclick="submitForm()" style="font-size:1rem;padding:1rem 3rem;">🩸 Register to Donate</button>
+      <div class="success-msg" id="successMsg">✅ Thank you! Your registration is confirmed. See you at the camp — you're a hero! 🦸</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-label" style="color:rgba(255,255,255,0.5);">Get In Touch</p>
+      <h2 class="section-title">Contact & Helpline</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card reveal"><div class="icon">📞</div><h4>Helpline</h4><p>1800-111-BLOOD<br/>(Toll Free)</p></div>
+      <div class="contact-card reveal"><div class="icon">✉️</div><h4>Email</h4><p>donate@bloodcamp.ddn</p></div>
+      <div class="contact-card reveal"><div class="icon">📍</div><h4>Address</h4><p>Chakrata Road<br/>ITM Dehradun – 248001</p></div>
+      <div class="contact-card reveal"><div class="icon">🏥</div><h4>Emergency</h4><p>Doon Hospital Blood Bank<br/>0135-1239631</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- USER LOGIN MODAL -->
+<div class="modal-overlay" id="userModal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <button class="modal-close" onclick="closeModal('userModal')">✕</button>
+      <div class="modal-logo">🩸</div>
+      <div class="modal-title">Welcome Back</div>
+      <div class="modal-subtitle">Sign in to your donor account</div>
+    </div>
+    <div class="role-toggle">
+      <button class="role-btn active" id="tabLogin" onclick="switchAuthTab('login')">🔑 Login</button>
+      <button class="role-btn" id="tabSignup" onclick="switchAuthTab('signup')">✨ Sign Up</button>
+    </div>
+    <div class="modal-body">
+      <div id="loginForm">
+        <div class="modal-err" id="loginErr"></div>
+        <div class="modal-field"><label>Email Address</label><input type="email" id="loginEmail" placeholder="you@example.com"/></div>
+        <div class="modal-field"><label>Password</label><div class="input-wrap"><input type="password" id="loginPass" placeholder="••••••••"/><button class="toggle-pw" onclick="togglePw('loginPass',this)">👁</button></div></div>
+        <div style="text-align:right;margin-bottom:1.2rem;"><a style="font-size:0.8rem;color:var(--gold);cursor:pointer;" onclick="showForgot()">Forgot password?</a></div>
+        <button class="btn-modal" onclick="doLogin()">Login to Account</button>
+        <div class="modal-footer" style="margin-top:1rem;">Don't have an account? <a onclick="switchAuthTab('signup')">Sign up free</a></div>
+      </div>
+      <div id="signupForm" style="display:none;">
+        <div class="modal-err" id="signupErr"></div>
+        <div class="modal-success" id="signupSuccess"></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;">
+          <div class="modal-field"><label>First Name</label><input type="text" id="suFirst" placeholder="First Name"/></div>
+          <div class="modal-field"><label>Last Name</label><input type="text" id="suLast" placeholder="Last Name"/></div>
+        </div>
+        <div class="modal-field"><label>Email Address</label><input type="email" id="suEmail" placeholder="xyz@example.com"/></div>
+        <div class="modal-field"><label>Blood Group</label>
+          <select id="suBlood" style="background:rgba(255,255,255,0.06);border:1.5px solid rgba(255,255,255,0.1);border-radius:10px;padding:0.78rem 1rem;color:var(--cream);font-family:'DM Sans',sans-serif;font-size:0.95rem;outline:none;width:100%;">
+            <option value="">Select…</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
+          </select>
+        </div>
+        <div class="modal-field"><label>Password</label><div class="input-wrap"><input type="password" id="suPass" placeholder="Min. 6 characters"/><button class="toggle-pw" onclick="togglePw('suPass',this)">👁</button></div></div>
+        <button class="btn-modal" onclick="doSignup()">Create Donor Account</button>
+        <div class="modal-footer" style="margin-top:1rem;">Already registered? <a onclick="switchAuthTab('login')">Sign in</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ADMIN LOGIN MODAL -->
+<div class="modal-overlay" id="adminModal">
+  <div class="modal-box">
+    <div class="modal-header" style="background:linear-gradient(135deg,rgba(212,168,83,0.08),transparent);">
+      <button class="modal-close" onclick="closeModal('adminModal')">✕</button>
+      <div class="modal-logo">⚙️</div>
+      <div class="modal-title">Admin Portal</div>
+      <div class="modal-subtitle">Authorised personnel only</div>
+    </div>
+    <div class="modal-body">
+      <div style="background:rgba(212,168,83,0.08);border:1px solid rgba(212,168,83,0.2);border-radius:10px;padding:0.8rem 1rem;margin-bottom:1.2rem;display:flex;gap:0.6rem;align-items:flex-start;">
+        <span>🔐</span><span style="font-size:0.8rem;color:rgba(212,168,83,0.8);line-height:1.5;">Use credentials: <strong style="color:var(--gold);">admin@bloodcamp.ddn</strong> / <strong style="color:var(--gold);">Admin@2026</strong></span>
+      </div>
+      <div class="modal-err" id="adminErr"></div>
+      <div class="modal-field"><label>Admin Email</label><input type="email" id="adminEmail" placeholder="admin@bloodcamp.ddn"/></div>
+      <div class="modal-field"><label>Password</label><div class="input-wrap"><input type="password" id="adminPass" placeholder="••••••••"/><button class="toggle-pw" onclick="togglePw('adminPass',this)">👁</button></div></div>
+      <div class="modal-field"><label>Access Code</label><input type="text" id="adminCode" placeholder="Enter access code"/><span style="font-size:0.72rem;color:rgba(255,255,255,0.25);margin-top:0.2rem;">Hint: 2 0 2 5 B D</span></div>
+      <button class="btn-modal" onclick="doAdminLogin()" style="background:linear-gradient(135deg,#b8860b,var(--gold));color:#1a1a1a;">🔓 Access Admin Dashboard</button>
+    </div>
+  </div>
+</div>
+
+<!-- USER DASHBOARD PANEL -->
+<div class="user-panel" id="userPanel">
+  <div class="user-panel-header">
+    <div style="display:flex;align-items:center;gap:0.8rem;">
+      <div class="up-avatar" id="upAvatar">U</div>
+      <div><div class="up-name" id="upName">Donor</div><div class="up-tag" id="upBlood">🩸 Blood Group</div></div>
+    </div>
+    <button class="btn-logout" onclick="closeDashboard()">✕ Close</button>
+  </div>
+  <div class="user-panel-body">
+    <div class="up-cards">
+      <div class="up-card"><div class="up-card-icon">🩸</div><div class="up-card-val" id="upDonations">-</div><div class="up-card-label">Total Donations</div></div>
+      <div class="up-card"><div class="up-card-icon">📅</div><div class="up-card-val" id="upNextDate">-</div><div class="up-card-label">Next Eligible Date</div></div>
+      <div class="up-card"><div class="up-card-icon">🏅</div><div class="up-card-val" id="upBadge">-</div><div class="up-card-label">Donor Badge</div></div>
+    </div>
+    <div class="up-section-title">📋 My Donation History</div>
+    <div id="upHistory"><p style="color:rgba(255,255,255,0.3);font-size:0.85rem;padding:0.5rem 0;">No donations yet — register to get started!</p></div>
+    <div class="up-section-title" style="margin-top:1.5rem;">🩸 My Blood Compatibility</div>
+    <div id="upCompatInfo" style="color:rgba(255,255,255,0.6);font-size:0.85rem;line-height:1.8;"></div>
+    <div style="margin-top:1.5rem;display:flex;gap:0.8rem;flex-wrap:wrap;">
+      <a href="#register" onclick="closeDashboard()" class="btn btn-primary" style="font-size:0.85rem;padding:0.7rem 1.4rem;">🩸 Register Again</a>
+      <button onclick="doLogout()" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);padding:0.7rem 1.4rem;border-radius:10px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:600;">🚪 Logout</button>
+    </div>
+  </div>
+</div>
+
+<!-- ADMIN DASHBOARD -->
+<div class="admin-panel" id="adminPanel">
+  <div class="admin-topbar">
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <div class="admin-topbar-logo">🩸 <span>Blood</span>Donation</div>
+      <span class="admin-badge">Admin Dashboard</span>
+    </div>
+    <div class="admin-user">
+      <span id="adminWelcomeName">Welcome, Admin</span>
+      <button class="btn-logout" onclick="adminLogout()">Logout</button>
+    </div>
+  </div>
+  <div class="admin-content">
+    <div class="admin-greeting">Good morning, <span id="adminFirstName">Admin</span> 👋</div>
+    <div class="admin-subtext">Blood Donation 2026 · Camp Status: <span style="color:#6fcf97;font-weight:700;">Active</span> · Last updated just now</div>
+    <div class="admin-kpi-grid">
+      <div class="kpi-card"><div class="kpi-icon">🩸</div><div class="kpi-val" id="kpiDonations">2</div><div class="kpi-label">Total Registrations</div></div>
+      <div class="kpi-card"><div class="kpi-icon">✅</div><div class="kpi-val" id="kpiConfirmed">0</div><div class="kpi-label">Confirmed Donors</div></div>
+      <div class="kpi-card"><div class="kpi-icon">🏥</div><div class="kpi-val">26</div><div class="kpi-label">Partner Institutions</div></div>
+      <div class="kpi-card"><div class="kpi-icon">🎓</div><div class="kpi-val">12</div><div class="kpi-label">Colleges Active</div></div>
+      <div class="kpi-card"><div class="kpi-icon">🧪</div><div class="kpi-val" id="kpiUnits">0</div><div class="kpi-label">Units Collected</div></div>
+      <div class="kpi-card"><div class="kpi-icon">📅</div><div class="kpi-val">2</div><div class="kpi-label">Days Remaining</div></div>
+    </div>
+    <div class="admin-search-bar">
+      <span>🔍</span>
+      <input type="text" id="donorSearch" placeholder="Search by name, blood group, venue..." oninput="filterDonors(this.value)"/>
+      <select id="filterBlood" onchange="filterDonors(document.getElementById('donorSearch').value)" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);padding:0.5rem 0.8rem;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:0.82rem;cursor:pointer;">
+        <option value="">All Blood Groups</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
+      </select>
+    </div>
+    <div class="admin-grid">
+      <div class="admin-card" style="grid-column:1/-1;">
+        <div class="admin-card-title">📋 Recent Donor Registrations</div>
+        <div style="overflow-x:auto;">
+          <table class="donor-table">
+            <thead><tr><th>Name</th><th>Blood Group</th><th>College / Org</th><th>Venue</th><th>Day</th><th>Status</th></tr></thead>
+            <tbody id="donorTableBody">
+              <tr><td>sagun rajput</td><td><span class="blood-badge">B+</span></td><td>Institute of Technology and Management </td><td>Doon Hospital</td><td>Day 1</td><td><span class="status-dot confirmed">Confirmed</span></td></tr>
+              <tr><td>shrishti saxena </td><td><span class="blood-badge">O+</span></td><td>Institute of Technology and Management</td><td>Doon Hospital </td><td>Day 2</td><td><span class="status-dot confirmed">Confirmed</span></td></tr>
+              <tr id="newDonorRow" style="display:none;"></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="noResults" style="display:none;text-align:center;padding:1rem;color:rgba(255,255,255,0.3);font-size:0.85rem;">No donors match your search.</div>
+      </div>
+      <div class="admin-card">
+        <div class="admin-card-title">🩸 Blood Group Distribution</div>
+        <div class="blood-chart">
+          <div class="chart-row"><span class="chart-label">B+</span><div class="chart-bar-wrap"><div class="chart-bar" style="width:0%" data-w="82%"></div></div><span class="chart-count">82</span></div>
+          <div class="chart-row"><span class="chart-label">O+</span><div class="chart-bar-wrap"><div class="chart-bar" style="width:0%" data-w="68%"></div></div><span class="chart-count">68</span></div>
+        </div>
+      </div>
+      <div class="admin-card">
+        <div class="admin-card-title">📍 Venue-wise Collection Progress</div>
+        <div class="venue-progress">
+          <div class="vp-item"><div class="vp-head"><span class="vp-name">Institute of Technology and Management</span><span class="vp-pct">20%</span></div><div class="vp-bar-wrap"><div class="vp-bar" style="width:0%" data-w="20%"></div></div></div>
+          <div class="vp-item"><div class="vp-head"><span class="vp-name">Doon Hospital</span><span class="vp-pct">00%</span></div><div class="vp-bar-wrap"><div class="vp-bar" style="width:0%" data-w="00%"></div></div></div>
+          <div class="vp-item"><div class="vp-head"><span class="vp-name">Indian Red cross society </span><span class="vp-pct">00%</span></div><div class="vp-bar-wrap"><div class="vp-bar" style="width:0%" data-w="00%"></div></div></div>
+          <div class="vp-item"><div class="vp-head"><span class="vp-name">Shri Mahant Indresh Hospital</span><span class="vp-pct">00%</span></div><div class="vp-bar-wrap"><div class="vp-bar" style="width:0%" data-w="00%"></div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="admin-actions">
+      <button class="admin-act-btn" onclick="alert('📧 Reminder emails sent to 47 pending donors!')">📧 Send Reminders</button>
+      <button class="admin-act-btn" onclick="exportCSV()">⬇ Export Donor List</button>
+      <button class="admin-act-btn" onclick="alert('📢 Announcement broadcast to all registered donors!')">📢 Broadcast Notice</button>
+      <button class="admin-act-btn" onclick="alert('🖨 Printing donor certificates for confirmed donors!')">🖨 Print Certificates</button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">🩸 <strong>Blood</strong>Donation · Dehradun 2026</div>
+    <div class="footer-links">
+      <a href="#why">Why Donate</a><a href="#blood-compat">Blood Guide</a>
+      <a href="#faq">FAQ</a><a href="#register">Register</a><a href="#contact">Contact</a>
+    </div>
+    <p style="margin-top:0.8rem;font-size:0.78rem;">Helpline: <a href="tel:1800111BLOOD">1800-111-BLOOD</a> &nbsp;|&nbsp; <a href="mailto:donate@bloodcamp.ddn">donate@bloodcamp.ddn</a></p>
+    <p style="margin-top:0.4rem;font-size:0.75rem;opacity:0.5;">Made with ❤️ for Dehradun · Every drop counts.</p>
+  </div>
+</footer>
+
+<!-- USER BADGE -->
+<div class="user-widget" id="userWidget">
+  <div class="user-avatar" id="userAvatar">U</div>
+  <span class="user-name-badge" id="userNameBadge">User</span>
+  <button onclick="openDashboard()" style="background:none;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);cursor:pointer;font-size:0.72rem;padding:0.2rem 0.6rem;border-radius:100px;font-family:'DM Sans',sans-serif;">Dashboard</button>
+  <button onclick="doLogout()" style="background:none;border:none;color:rgba(255,255,255,0.4);cursor:pointer;font-size:0.78rem;" title="Logout">✕</button>
+</div>
+
+<script src="script.js"></script>
+<script>
+const API = 'http://localhost:5000/api';
+
+const compatData = {
+  'A+':  { donate:['A+','AB+'],                           receive:['A+','A-','O+','O-'] },
+  'A-':  { donate:['A+','A-','AB+','AB-'],                receive:['A-','O-'] },
+  'B+':  { donate:['B+','AB+'],                           receive:['B+','B-','O+','O-'] },
+  'B-':  { donate:['B+','B-','AB+','AB-'],                receive:['B-','O-'] },
+  'AB+': { donate:['AB+'],                                receive:['A+','A-','B+','B-','AB+','AB-','O+','O-'] },
+  'AB-': { donate:['AB+','AB-'],                          receive:['A-','B-','AB-','O-'] },
+  'O+':  { donate:['A+','B+','O+','AB+'],                 receive:['O+','O-'] },
+  'O-':  { donate:['A+','A-','B+','B-','AB+','AB-','O+','O-'], receive:['O-'] }
+};
+
+function showCompat(group) {
+  document.querySelectorAll('.compat-btn').forEach(b => b.classList.toggle('active', b.textContent === group));
+  const d = compatData[group];
+  const all = ['A+','A-','B+','B-','AB+','AB-','O+','O-'];
+  const boxes = all.map(g => {
+    const canDonate = d.donate.includes(g), canReceive = d.receive.includes(g);
+    let cls = 'compat-cell neutral', icon = '✕', lbl = 'None';
+    if (g === group) { cls = 'compat-cell self'; icon = '👤'; lbl = 'You'; }
+    else if (canDonate && canReceive) { cls = 'compat-cell both'; icon = '⇄'; lbl = 'Both'; }
+    else if (canDonate)  { cls = 'compat-cell donate'; icon = '→'; lbl = 'Donate To'; }
+    else if (canReceive) { cls = 'compat-cell receive'; icon = '←'; lbl = 'Receive'; }
+    return `<div class="${cls}"><div class="cc-group">${g}</div><div class="cc-icon">${icon}</div><div class="cc-label">${lbl}</div></div>`;
+  }).join('');
+  document.getElementById('compatResult').innerHTML =
+    `<div class="compat-legend"><span class="leg-item"><span class="leg-dot donate"></span>Donate To</span><span class="leg-item"><span class="leg-dot receive"></span>Receive From</span><span class="leg-item"><span class="leg-dot both"></span>Both</span></div>
+     <div class="compat-grid">${boxes}</div>
+     <p style="margin-top:1rem;font-size:0.82rem;color:rgba(255,255,255,0.45);text-align:center;">${group} donates to: <strong style="color:#6fcf97">${d.donate.join(', ')}</strong> &nbsp;|&nbsp; Receives from: <strong style="color:#56ccf2">${d.receive.join(', ')}</strong></p>`;
+}
+
+function toggleFaq(btn) {
+  const item = btn.parentElement, isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+function toggleNav() {
+  document.getElementById('navLinks').classList.toggle('open');
+  document.getElementById('navOverlay').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('open');
+}
+function closeNav() {
+  ['navLinks','navOverlay','hamburger'].forEach(id => document.getElementById(id).classList.remove('open'));
+}
+
+function saveSession(d) { try { localStorage.setItem('donor_session', JSON.stringify(d)); } catch(e){} }
+function getSession()   { try { return JSON.parse(localStorage.getItem('donor_session')); } catch(e){ return null; } }
+function clearSession() { try { localStorage.removeItem('donor_session'); } catch(e){} }
+
+function openModal(type) { document.getElementById(type==='user'?'userModal':'adminModal').classList.add('open'); }
+function closeModal(id)  { document.getElementById(id).classList.remove('open'); }
+
+function showErr(id, msg) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.textContent = msg; el.style.display = 'block';
+  setTimeout(() => el.style.display = 'none', 4000);
+}
+
+function switchAuthTab(tab) {
+  const lf=document.getElementById('loginForm'), sf=document.getElementById('signupForm');
+  const tl=document.getElementById('tabLogin'),   ts=document.getElementById('tabSignup');
+  if (tab==='login') { lf.style.display=''; sf.style.display='none'; tl.classList.add('active'); ts.classList.remove('active'); }
+  else               { lf.style.display='none'; sf.style.display=''; ts.classList.add('active'); tl.classList.remove('active'); }
+}
+
+function togglePw(id, btn) {
+  const inp = document.getElementById(id);
+  inp.type = inp.type==='password' ? 'text' : 'password';
+  btn.textContent = inp.type==='password' ? '👁' : '🙈';
+}
+
+function showForgot() { alert('Password reset ke liye admin se contact karein:\ndonate@bloodcamp.ddn'); }
+
+function showUserBadge(name) {
+  const w = document.getElementById('userWidget'); if (!w) return;
+  document.getElementById('userNameBadge').textContent = name;
+  document.getElementById('userAvatar').textContent = name.charAt(0).toUpperCase();
+  w.style.display = 'flex';
+}
+
+function openDashboard() {
+  const session = getSession(); if (!session) return;
+  const user = session.user;
+  document.getElementById('upAvatar').textContent = user.name.charAt(0).toUpperCase();
+  document.getElementById('upName').textContent   = user.name;
+  document.getElementById('upBlood').textContent  = '🩸 ' + (user.blood_group || 'Unknown');
+  const bg = user.blood_group;
+  if (bg && compatData[bg]) {
+    const d = compatData[bg];
+    document.getElementById('upCompatInfo').innerHTML =
+      `<strong style="color:rgba(255,255,255,0.8);">Can donate to:</strong> <span style="color:#6fcf97">${d.donate.join(', ')}</span><br/>
+       <strong style="color:rgba(255,255,255,0.8);">Can receive from:</strong> <span style="color:#56ccf2">${d.receive.join(', ')}</span>`;
+  }
+  fetch(API + '/donate/history', { headers: { 'Authorization': 'Bearer ' + session.token } })
+    .then(r => r.json()).then(d => {
+      if (d.donations && d.donations.length) {
+        const total = d.donations.length;
+        document.getElementById('upDonations').textContent = total;
+        const badges = ['','First Timer 🌱','Life Saver 💪','Hero Donor ⭐','Champion 🏆','Legend 👑'];
+        document.getElementById('upBadge').textContent = badges[Math.min(total, badges.length-1)] || 'Legend 👑';
+        const last = new Date(d.donations[0].donated_at);
+        const next = new Date(last.getTime() + 56*86400000);
+        document.getElementById('upNextDate').textContent = next.toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
+        document.getElementById('upHistory').innerHTML = d.donations.slice(0,5).map(don =>
+          `<div class="up-hist-row"><span class="blood-badge">${don.blood_group}</span><span>${don.venue}</span><span style="color:rgba(255,255,255,0.4);font-size:0.78rem;">${new Date(don.donated_at).toLocaleDateString('en-IN')}</span><span class="status-dot confirmed" style="font-size:0.75rem;">Confirmed</span></div>`
+        ).join('');
+      } else {
+        document.getElementById('upDonations').textContent = '0';
+        document.getElementById('upBadge').textContent = 'Register First';
+        document.getElementById('upNextDate').textContent = 'Anytime!';
+      }
+    }).catch(() => {
+      document.getElementById('upDonations').textContent = '–';
+      document.getElementById('upNextDate').textContent  = '–';
+      document.getElementById('upBadge').textContent     = '–';
+    });
+  document.getElementById('userPanel').classList.add('open');
+}
+function closeDashboard() { document.getElementById('userPanel').classList.remove('open'); }
+
+function doLogout() { clearSession(); const w=document.getElementById('userWidget'); if(w) w.style.display='none'; closeDashboard(); }
+
+function doAdminLogin() {
+  const email=document.getElementById('adminEmail').value.trim();
+  const pass =document.getElementById('adminPass').value;
+  const code =document.getElementById('adminCode').value.trim();
+  if (email!=='admin@bloodcamp.ddn' || pass!=='Admin@2026' || code!=='2025BD') { showErr('adminErr','✕ Invalid credentials or access code.'); return; }
+  closeModal('adminModal');
+  document.getElementById('adminPanel').classList.add('open');
+  setTimeout(() => {
+    document.querySelectorAll('.chart-bar[data-w]').forEach(b => b.style.width = b.dataset.w);
+    document.querySelectorAll('.vp-bar[data-w]').forEach(b => b.style.width = b.dataset.w);
+  }, 400);
+  fetch(API+'/stats', { headers:{'x-admin-key':'Admin@2026'} })
+    .then(r=>r.json()).then(d => {
+      if (d.total_registrations!=null) document.getElementById('kpiDonations').textContent = d.total_registrations;
+      if (d.confirmed_donors!=null)    document.getElementById('kpiConfirmed').textContent  = d.confirmed_donors;
+      if (d.total_units!=null)         document.getElementById('kpiUnits').textContent       = d.total_units;
+    }).catch(()=>{});
+  fetch(API+'/donations', { headers:{'x-admin-key':'Admin@2026'} })
+    .then(r=>r.json()).then(d => {
+      if (!d.donations||!d.donations.length) return;
+      const tbody = document.getElementById('donorTableBody');
+      tbody.querySelectorAll('tr:not(#newDonorRow)').forEach(r=>r.remove());
+      const anchor = document.getElementById('newDonorRow');
+      d.donations.forEach(don => {
+        const tr = document.createElement('tr');
+        tr.innerHTML=`<td>${don.first_name} ${don.last_name}</td><td><span class="blood-badge">${don.blood_group}</span></td><td>${don.organisation||'–'}</td><td>${don.venue||'–'}</td><td>${don.camp_day||'Day 1'}</td><td><span class="status-dot confirmed">${don.status||'Confirmed'}</span></td>`;
+        tbody.insertBefore(tr, anchor);
+      });
+    }).catch(()=>{});
+}
+
+function adminLogout() { document.getElementById('adminPanel').classList.remove('open'); }
+
+function filterDonors(query) {
+  const bg = document.getElementById('filterBlood').value.toLowerCase();
+  const q  = query.toLowerCase();
+  let vis = 0;
+  document.querySelectorAll('#donorTableBody tr:not(#newDonorRow)').forEach(tr => {
+    const t = tr.textContent.toLowerCase();
+    const ok = t.includes(q) && (bg===''||t.includes(bg));
+    tr.style.display = ok ? '' : 'none';
+    if (ok) vis++;
+  });
+  document.getElementById('noResults').style.display = vis===0 ? 'block' : 'none';
+}
+
+function switchTab(type, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+type).classList.add('active');
+  btn.classList.add('active');
+}
+
+function exportCSV() {
+  const rows=[['Name','Blood Group','Organisation','Venue','Day','Status']];
+  document.querySelectorAll('#donorTableBody tr:not(#newDonorRow)').forEach(tr=>{
+    const cells=[...tr.querySelectorAll('td')].map(td=>td.textContent.trim());
+    if(cells.length) rows.push(cells);
+  });
+  const csv = rows.map(r=>r.join(',')).join('\n');
+  const a = document.createElement('a');
+  a.href = 'data:text/csv,'+encodeURIComponent(csv);
+  a.download = 'donors_'+new Date().toISOString().slice(0,10)+'.csv';
+  a.click();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.modal-overlay').forEach(ov=>
+    ov.addEventListener('click', e=>{ if(e.target===ov) ov.classList.remove('open'); })
+  );
+  window.addEventListener('scroll', ()=>
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60)
+  );
+  const revObs = new IntersectionObserver(entries=>
+    entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); }), {threshold:0.1}
+  );
+  document.querySelectorAll('.reveal').forEach(el=>revObs.observe(el));
+  const statObs = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if (!entry.isIntersecting) return;
+      const el=entry.target, target=+el.dataset.target;
+      let count=0;
+      const step=Math.ceil(target/60);
+      const timer=setInterval(()=>{
+        count=Math.min(count+step,target);
+        el.textContent=count+(target>=1000?'+':'');
+        if(count>=target) clearInterval(timer);
+      },20);
+      statObs.unobserve(el);
+    });
+  },{threshold:0.5});
+  document.querySelectorAll('.stat-num[data-target]').forEach(el=>statObs.observe(el));
+  const session=getSession();
+  if(session) showUserBadge(session.user.name);
+});
+</script>
+</body>
+</html>
